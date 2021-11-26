@@ -6,7 +6,7 @@ const path = require ('path');
 const http = require('http');
 const PORT = process.env.PORT || 8000;
 const app = express();
-const server = http.Server(app)
+const server = http.Server(app);
 
 const io = require("socket.io")(server, {
 	cors: {
